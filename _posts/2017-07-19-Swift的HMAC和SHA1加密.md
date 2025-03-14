@@ -38,7 +38,7 @@ tags:
 
 ## swift
 
-最近用 swift 重构项目,用 Swift [重写了](https://stackoverflow.com/questions/26970807/implementing-hmac-and-sha1-encryption-in-swift?rq=1) HMAC 的 SHA1 加密方式。
+最近用 swift 重构项目,用 Swift [重写了](https://www.baidu.com) HMAC 的 SHA1 加密方式。
 
 ### 使用
 
