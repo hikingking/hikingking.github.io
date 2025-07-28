@@ -1,4 +1,4 @@
-* [主页](/#/)
-* [软件下载](/download.md/)
-* [使用教程](/guide.md/)
-* [关于本站](/about.md/)
+* [主页](#/)
+* [下载安装](/download.md)
+* [使用指南](/guide.md)
+* [关于](/about.md)
