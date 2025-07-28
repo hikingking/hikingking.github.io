@@ -4,23 +4,52 @@
   <meta charset="UTF-8">
   <title>我的博客/下载站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Docsify 主题 CSS -->
+  <!-- Docsify 核心库 -->
   <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
-  
-  <!-- &#11088;️ 新增 Docsify 核心 JS -->
-  <script src="//unpkg.com/docsify@latest/lib/docsify.min.js"></script>
-  
-  <!-- &#10004;️ 将配置放入 script 标签 -->
   <script>
     window.$docsify = {
       name: '我的博客/下载站',
       repo: "https://github.com/hikingking/hikingking.github.io",
       loadSidebar: true,
-      loadNavbar: true
-    };
+      loadNavbar: true,
+      // 指定导航文件路径
+      sidebar: '_sidebar.md',
+      navbar: '_navbar.md'
+    }
+  </script>
+  <!-- 基础Docsify库 -->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- Markdown解析插件 -->
+  <script src="//unpkg.com/docsify/lib/plugins/markdown.js"></script>
+  <!-- 初始化侧边栏和导航栏的插件 -->
+  <script>
+    // 确保文档加载完成后执行
+    document.addEventListener('DOMContentLoaded', function() {
+      // 手动初始化侧边栏
+      if (window.$docsify.loadSidebar) {
+        const sidebarPath = window.$docsify.sidebar || '_sidebar.md';
+        window.Docsify.util.ajax(sidebarPath).then(function(res) {
+          window.Docsify.dom.find('#app').insertAdjacentHTML('beforeend', 
+            '<aside class="sidebar">' + res + '</aside>');
+        }).catch(function(err) {
+          console.error('侧边栏加载失败:', err);
+        });
+      }
+      
+      // 手动初始化导航栏
+      if (window.$docsify.loadNavbar) {
+        const navbarPath = window.$docsify.navbar || '_navbar.md';
+        window.Docsify.util.ajax(navbarPath).then(function(res) {
+          window.Docsify.dom.find('#app').insertAdjacentHTML('afterbegin', 
+            '<header class="navbar">' + res + '</header>');
+        }).catch(function(err) {
+          console.error('导航栏加载失败:', err);
+        });
+      }
+    });
   </script>
 </body>
 </html>
