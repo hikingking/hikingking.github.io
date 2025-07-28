@@ -1,4 +1,5 @@
 * [首页](/)
-* [博客](/blog/)
-* [下载](/download/)
-* [关于我](/about/)
+* [博客](/about.md/)
+* [下载](/download.md/)
+* [关于我](/about.md/)
+* [guide](/guide.md/)
