@@ -4,22 +4,20 @@
   <meta charset="UTF-8">
   <title>我的博客/下载站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Docsify 主题 -->
-  <link rel="stylesheet" href="https://unpkg.com/docsify@4.13.1/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: '我的博客/下载站',
-      repo: 'https://github.com/hikingking/hikingking.github.io',
-      loadSidebar: '_sidebar.md',
-      loadNavbar: '_navbar.md',
-      homepage: 'README.md', // 确保首页文件存在
-      auto2top: true, // 自动滚动到顶部
-      relativePath: true // 支持相对路径
-    }
+      repo: "https://github.com/hikingking/hikingking.github.io",
+      loadSidebar: true,
+      loadNavbar: true,
+      sidebarFile: '_sidebar.md',  // 显式指定路径
+      navbarFile: '_navbar.md'    // 显式指定路径
+    };
   </script>
-  <script src="https://unpkg.com/docsify@4.13.1/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
