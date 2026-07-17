@@ -1,5 +1,7 @@
 * [首页](#/)
 * [下载安装](download.md)
+* [创建](_posts/2026-07-17-创建.md)
+* [URL](https://github.com/hikingking/hikingking.github.io/new/master/_posts)
 * [使用指南](guide.md)
 
 <!-- 文章列表 -->
