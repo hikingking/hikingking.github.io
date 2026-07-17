@@ -1,5 +1,5 @@
 * [首页](#/)
 * [下载安装](download.md)
 * [使用指南](guide.md)
-* [第一篇](_posts/first-post.md)
+* [第一篇](_posts/2026-07-17-第一篇.md)
 * [关于](about.md)
