@@ -3,4 +3,4 @@
 * [使用指南](guide.md)
 * [第一篇](_posts/2026-07-17-第一篇.md)
 * [关于](about.md)
-* [创建](https://hikingking.github.io/#/_posts/2026-07-17-%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84%E6%A0%87%E9%A2%98.md)
+* [创建](_posts/2026-07-17-创建.md)
